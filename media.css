@@ -1,6 +1,51 @@
 
 
 @media screen and (max-width: 852px) {
+
+    /* drop-down */
+
+    /* dropdown 1 */
+    /* #drp-check{
+        display: block;
+    } */
+
+    .drp-div{
+        display: none;
+    }
+
+    #drp-check:checked ~ .drp-div{
+        display: contents;    
+    }
+
+    .drp-list{
+        padding: 15px 30px;  
+    }
+
+    .drp-li a{
+        padding: 10px !important;
+    }
+    .li-drp{
+        position: relative;
+    }
+    .drp-div{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    /* dropdown 2 */
+    #drp-check-in{
+        display: contents;
+    }
+
+    .drp-list-in{
+        display: none;
+    }
+    #drp-check-in:checked ~ .drp-list-in{
+        display: contents;
+    }
+
+/* end */
     
     
     .menu {
@@ -28,13 +73,7 @@
         transition: transform 0.3s ease-in-out;
     }
 
-    #drp-check:checked + .drp-hide{
-        display: contents;
-    }
 
-    .drp-down-menu-in{
-        display: none;
-    }
 
     .menu-open{       
         display: contents;

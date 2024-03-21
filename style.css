@@ -212,56 +212,6 @@ section {
     display: none;
 }
 
- 
-  .drp-down-list{
-    position: relative;
-  }
-
-  .drp-down-menu{
-    visibility: hidden;
-    position: absolute;
-    top: 31px;
-    padding: 20px 0;
-    background-color: var(--white);
-    border-radius: 0 0 10px 10px;
-  }
-  .drp-down-menu ul{
-    list-style: none;
-    padding: 0;
-  }
-  .drp-down-menu ul li{
-    padding: 5px 5px;
-  }
-
-  .drp-down-in{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-  .drp-down-list-in a{
-    padding: 0 !important;
-  }
-
-  .drp-down-list:hover .drp-down-menu{visibility: visible;} 
-
-  .drp-down-menu-in{
-    visibility: hidden;
-    position: absolute;
-    left: 101%;
-    top: 35%;
-    padding: 20px 30px;
-    background-color: var(--white);
-    border-radius: 0 0 5px 5px;
-  }
-  .drp-down-list-in{
-    padding: 5px 30px !important;
-  }
-  .drp-down-list-in:hover .drp-down-menu-in{visibility: visible;} 
-
-.zoom:hover{
-    transform: scale(1.2);
-}
 
  .nav-content-list {
     display: flex !important;
@@ -315,19 +265,64 @@ li>a {
     visibility: hidden;
 }
 
-.drp-hide{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* dropdown 1 */
+#drp-check-in{
+    display: none;
 }
-.drp-hide li{
-    text-align: center;
+.li-drp{
+    position: relative;
+}
+.drp-div{
+    max-width: 100%;
+    background-color: var(--white);
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    top: 31px;
+    width: 95px;
+    visibility: hidden;
+}
+.drp-list{
+    list-style: none;
+    /* padding-left: 0; */
+    padding-left: 10px;
 }
 
-/* gdnhdhfgnhfghfghfg */
-/* gfjmhgmggjgjhg
- */
+.drp-list li{
+    padding: 5px 0;
+}
+
+.li-drp:hover .drp-div{
+    visibility: visible;
+}
+
+.drp-li a{
+    padding: 10px 0 !important;
+}
+
+/* dropdown - 2 */
+
+.drp-li{
+position: relative;
+}
+
+.drp-list-in{
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 0 0 5px 5px;
+    position: absolute;
+    left: 101%;
+    top: 15%;
+    width: 100px;
+    visibility: hidden;
+}
+
+
+
+.drp-li:hover .drp-list-in{
+    visibility: visible;
+}
+
+
 .nav-list-btn{
     display: none;
 }
