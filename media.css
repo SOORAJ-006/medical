@@ -237,7 +237,8 @@
     }
 
     .nav-list-btn-login{
-        display: contents;
+        display: block;
+
     }
 }
 
