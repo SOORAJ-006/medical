@@ -326,7 +326,11 @@ li>a {
 }
 
 /* gdnhdhfgnhfghfghfg */
-
+/* gfjmhgmggjgjhg
+ */
+.nav-list-btn{
+    display: none;
+}
 .nav-list-btn-login{
     display: none;
     color: var(--white);
