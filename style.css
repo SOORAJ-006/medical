@@ -153,14 +153,6 @@ section {
     padding: 0 10px;
 }
 
-/* button end */
-
-/* navbar */
-
-.header-navigation {
-    background-color: #EFF8ED;
-}
-
 .navbar {
     display: flex;
     align-items: center;
@@ -219,12 +211,6 @@ section {
 
 }
 
-.nav-hover:hover {
-    background-color: var(--green);
-    color: var(--white);
-    border-radius: 5px;
-}
-
 .nav-content-list li {
     padding: 0;
     max-height: fit-content;
@@ -247,8 +233,7 @@ li>a {
 
 }
 
-.menu-open,
-.menu-close {
+.menu-open{
     font-size: 24px;
     display: none;
 }
@@ -259,21 +244,14 @@ li>a {
 
 /* dropdown 1 */
 #drp-check-in {
-    display: none;
+    visibility: visible;
 }
 
 .li-drp {
     position: relative;
 }
 
-.drp-div {
-    background-color: var(--white);
-    border-radius: 0 0 5px 5px;
-    position: absolute;
-    top: 31px;
-    width: 100%;
-    visibility: hidden;
-}
+
 
 .drp-list {
     list-style: none;
@@ -299,9 +277,7 @@ li>a {
     padding: 5px 0;
 }
 
-.li-drp:hover .drp-div {
-    visibility: visible;
-}
+
 
 /* .drp-li a{
     padding: 10px 0 !important;
@@ -309,24 +285,8 @@ li>a {
 
 /* dropdown - 2 */
 
-.drp-li {
-    position: relative;
-}
 
-.drp-div-in {
-    position: absolute;
-    background-color: var(--white);
-    border-radius: 0 0 5px 5px;
-    position: absolute;
-    left: 101%;
-    top: 15%;
-    width: 100px;
-    visibility: hidden;
-}
 
-.drp-li:hover .drp-div-in {
-    visibility: visible;
-}
 
 
 .nav-list-btn {
@@ -351,13 +311,15 @@ li>a {
 
 /* inside dropdown */
 
-#drp-check {
-    display: none;
+/* button end */
+
+/* navbar */
+
+.header-navigation {
+    background-color: #EFF8ED;
 }
 
-.drp-hide {
-    display: none;
-}
+
 
 /* end of navbar and section one body start */
 
