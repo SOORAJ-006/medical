@@ -291,6 +291,16 @@ li>a {
     padding: 5px 0;
 }
 
+.drp-list-in{
+    list-style: none;
+    /* padding-left: 0; */
+    padding-left: 10px;
+}
+
+.drp-list-in li{
+    padding: 5px 0;
+}
+
 .li-drp:hover .drp-div{
     visibility: visible;
 }
@@ -305,7 +315,7 @@ li>a {
 position: relative;
 }
 
-.drp-list-in{
+.drp-div-in{
     position: absolute;
     background-color: var(--white);
     border-radius: 0 0 5px 5px;
@@ -318,7 +328,7 @@ position: relative;
 
 
 
-.drp-li:hover .drp-list-in{
+.drp-li:hover .drp-div-in{
     visibility: visible;
 }
 

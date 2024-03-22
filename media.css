@@ -2,6 +2,7 @@
 
 @media screen and (max-width: 852px) {
 
+
     /* drop-down */
 
     /* dropdown 1 */
@@ -14,12 +15,40 @@
     }
 
     #drp-check:checked ~ .drp-div{
-        display: contents;    
+        display: contents;   
     }
 
     .drp-list{
         padding: 15px 30px;  
+        display: block;  
+        
     }
+
+    .drp-list-in{
+        padding: 15px 0;  
+        display: block;  
+        
+    }
+
+    
+
+    #drp-check:checked ~ .drp-div ul::after{
+        display: block;
+        content: '';
+        width: 100px;
+        height: 1px;
+        background-color: #ffffff;
+    }
+
+    #drp-check:checked ~ .drp-div ul::before{
+        display: block;
+        content: '';
+        width: 100px;
+        height: 1px;
+        background-color: #ffffff;
+    }
+
+    
 
     .drp-li a{
         padding: 10px !important;
@@ -38,10 +67,10 @@
         display: contents;
     }
 
-    .drp-list-in{
+    .drp-div-in{
         display: none;
     }
-    #drp-check-in:checked ~ .drp-list-in{
+    #drp-check-in:checked ~ .drp-div-in{
         display: contents;
     }
 
@@ -61,7 +90,7 @@
         width: 80%;
         height: 100vh;
         z-index: 100;
-        
+        transition: all .3s ease-in-out;
     }
 
 
@@ -70,7 +99,7 @@
         right: 0px;
         visibility: visible;
         opacity: 1;
-        transition: transform 0.3s ease-in-out;
+        transition: all .3s ease-in-out;
     }
 
 
