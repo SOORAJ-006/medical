@@ -2,7 +2,13 @@
 
 @media screen and (max-width: 852px) {
 
-
+    .header-navigation{
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
     /* drop-down */
 
     /* dropdown 1 */
@@ -55,6 +61,7 @@
     }
     .li-drp{
         position: relative;
+        overflow: auto;
     }
     .drp-div{
         position: absolute;
@@ -91,6 +98,7 @@
         height: 100vh;
         z-index: 100;
         transition: all .3s ease-in-out;
+        overflow: scroll;
     }
 
 
