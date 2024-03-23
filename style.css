@@ -156,7 +156,7 @@ section {
 .navbar {
     display: flex;
     align-items: center;
-    gap: 30PX;
+    justify-content: space-between;
     max-width: 1080px;
     padding: 10px;
     margin: 0 auto;
@@ -179,10 +179,10 @@ section {
     align-items: center;
 }
 
-.nav-content {
+/* .nav-content {
     display: flex;
     flex: 1;
-}
+} */
 
 .nav-content-items {
     display: flex;
@@ -201,6 +201,7 @@ section {
 
 .nav-content-list {
     display: flex !important;
+    align-items: center;
     gap: 21px;
     list-style: none;
     color: var(--grey);
@@ -208,7 +209,6 @@ section {
     font-weight: 700;
     line-height: 24px;
     padding-inline-start: 0px;
-
 }
 
 .nav-content-list li {
@@ -249,15 +249,46 @@ li>a {
 
 .li-drp {
     position: relative;
+    text-align: center;
 }
-
-
 
 .drp-list {
     list-style: none;
-    /* padding-left: 0; */
-    padding-left: 10px;
+    padding-left: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
+
+.drp-list::before{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: var(--white);
+}
+
+.drp-list::after{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: var(--white);
+}
+
+.drp-list-in::before{
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: var(--white);
+}
+
+.drp-list-in::after{
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: var(--white);
+}
+
 
 .drp-a {
     border-radius: 5px 5px 0 0 !important;
@@ -269,8 +300,12 @@ li>a {
 
 .drp-list-in {
     list-style: none;
-    /* padding-left: 0; */
-    padding-left: 10px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
 }
 
 .drp-list-in li {
