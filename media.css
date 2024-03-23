@@ -159,6 +159,12 @@
     font-size: 20px;
 }
 
+.btn-close-mark{
+    position: fixed;
+    top: 15px;
+    right: 15px;
+}
+
 .btn-close-mark label{
     
     display: block;
@@ -510,5 +516,9 @@
     .new {
         width: 60px;
         height: 60px;
+    }
+
+    .footer-bottom-text-h6{
+        text-align: center;
     }
 }
